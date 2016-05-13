@@ -1,6 +1,7 @@
 package com.pauldok.remindme.server;
 
 import com.pauldok.remindme.server.config.WebConfig;
+import com.pauldok.remindme.server.repository.RemindRepository;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
