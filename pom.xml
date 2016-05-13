@@ -10,12 +10,13 @@
     <packaging>war</packaging>
 
     <properties>
-        <spring-core.version>4.2.6.RELEASE</spring-core.version>
+        <spring-core.version>4.2.2.RELEASE</spring-core.version>
         <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
-        <spring-data-jpa.version>1.10.1.RELEASE</spring-data-jpa.version>
-        <hibernate-entitymanager.version>5.1.0.Final</hibernate-entitymanager.version>
+        <spring-data-jpa.version>1.9.2.RELEASE</spring-data-jpa.version>
+        <hibernate-entitymanager.version>5.0.2.Final</hibernate-entitymanager.version>
         <postgresql.version>9.1-901-1.jdbc4</postgresql.version>
         <commons-dbcp2.version>2.1.1</commons-dbcp2.version>
+        <jta.version>1.1</jta.version>
     </properties>
 
     <dependencies>
@@ -42,6 +43,11 @@
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
             <version>${spring-data-jpa.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.transaction</groupId>
+            <artifactId>jta</artifactId>
+            <version>${jta.version}</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
